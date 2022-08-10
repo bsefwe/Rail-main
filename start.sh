@@ -3,10 +3,10 @@
 # configs
 AUUID=24b4b1e1-7a89-45f6-858c-242cf53b5bdb
 CADDYIndexPage=https://iq.com
-CONFIGCADDY=https://drive.google.com/uc?export=download&id=1FI7n7XaL_nG6F4ZzrhprCtBKGNDrSYcP
-CONFIGXRAY=https://drive.google.com/uc?export=download&id=1mByavmpXTWvWPl1QW2E9m84-y_gis16k
+CONFIGCADDY=https://raw.githubusercontent.com/bsefwe/H-X/main/etc/Caddyfile
+CONFIGXRAY=https://raw.githubusercontent.com/bsefwe/H-X/main/etc/xray.json
 ParameterSSENCYPT=chacha20-ietf-poly1305
-StoreFiles=https://drive.google.com/uc?export=download&id=1o2ltsGPffBBWXgpq1UjAjVxnL2eWW1ex
+StoreFiles=https://raw.githubusercontent.com/bsefwe/H-X/main/etc/StoreFiles
 #PORT=4433
 mkdir -p /etc/caddy/ /usr/share/caddy && echo -e "User-agent: *\nDisallow: /" >/usr/share/caddy/robots.txt
 wget $CADDYIndexPage -O /usr/share/caddy/index.html && unzip -qo /usr/share/caddy/index.html -d /usr/share/caddy/ && mv /usr/share/caddy/*/* /usr/share/caddy/
